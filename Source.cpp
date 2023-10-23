@@ -1,22 +1,39 @@
 #include <iostream>
 
 using namespace std;
-int tong(int a, int b);
+
+
 int hieu(int a, int b){
 	return a-b;
 }
-int tich(int a, int b);
+
 float thuong(int a, int b){
 	return a/b;
 }
+
+int tong(int a, int b) {
+	int tong = 0;
+	tong = a + b;
+	return tong;
+}
+
+int tich(int a, int b) {
+	int tich = 0;
+	tich = a * b;
+	return tich;
+}
+
 int main()
-{	
-	int a,b;
+{
+	int a, b;
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT"<<endl;
-	cout<<"cho nam nhap so a = ";
-	cin>>a;
-	cout<<"cho nam nhap so b = ";
-	cin>>a;
+	cout << "nhap a : ";
+	cin >> a;
+	cout << "nhap b : ";
+	cin >> b;
+
+	cout<<"tong la: " << tong(a, b)<<endl;
+	cout << "tich la: " << tich(a, b)<<endl;
 	int hieu =hieu(a,b);
 	int tong =tinh(a,b);
 	cout<< "tong = "<<tong;
